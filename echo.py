@@ -1,5 +1,10 @@
-# 사용자로부터 문장 입력 받기
-sentence = input("문장을 입력하세요: ")
+print("문장을 입력하세요. 종료하려면 '!quit'을 입력하세요.")
 
-# 입력한 문장 그대로 출력
-print(sentence)
+while True:
+    sentence = input("> ")
+
+    if sentence == "!quit":
+        print("프로그램을 종료합니다.")
+        break
+
+    print(sentence)
